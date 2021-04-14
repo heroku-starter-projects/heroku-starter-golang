@@ -1,7 +1,10 @@
-run:
-	go run main.go
+start:
+	ENV=development go run main.go
 
 build:
 	go build -v
 
-.PHONY: run build
+local-setup:
+	cp ./env_sample ./.env
+
+.PHONY: start start-dev build

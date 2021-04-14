@@ -16,3 +16,6 @@
 
 # Final build
 heroku-starter-golang
+
+# Env file
+.env
