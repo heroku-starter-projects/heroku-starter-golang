@@ -4,7 +4,7 @@ import "gorm.io/gorm"
 
 type Warehouse struct {
 	gorm.Model
-	Address  string
-	Workers  []Worker
-	Products []*Product `gorm:"many2many:inventory;"`
+	Address  string     `json:"address"`
+	Workers  []Worker   `json:"workers"`
+	Products []*Product `gorm:"many2many:inventory;" json:"products"`
 }

@@ -2,3 +2,6 @@ Unmock the routes
 Auth with JWT
 Lint with ?
 Tests with ?
+API schema validation
+Move DB session to middleware
+Middlewares

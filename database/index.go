@@ -50,3 +50,10 @@ func CreateConnection() *gorm.DB {
 
 	return db
 }
+
+func CloseConnection() error {
+	err := sqlDB.Close()
+	sqlDB = nil
+
+	return err
+}

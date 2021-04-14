@@ -6,8 +6,8 @@ func RegisterRoutes(app *fiber.App) {
 	app.Get("/pizza", GetPizza)
 	app.Post("/pizza", PostPizza)
 
-	app.Get("/dessert", GetDessert)
-	app.Post("/dessert", PostDessert)
+	app.Get("/warehouse/:id", GetWarehouse)
+	app.Post("/warehouse", PostWarehouse)
 
 	app.Get("/health", GetHealth)
 }

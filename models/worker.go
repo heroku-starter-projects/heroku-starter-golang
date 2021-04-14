@@ -4,6 +4,6 @@ import "gorm.io/gorm"
 
 type Worker struct {
 	gorm.Model
-	Name        string
+	Name        string `json:"name"`
 	WarehouseID uint
 }

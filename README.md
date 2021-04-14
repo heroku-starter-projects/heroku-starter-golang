@@ -7,10 +7,10 @@ Deployed here on heroku
 
 ## Installation
 
-Make sure [Docker](https://www.docker.com/), [make](https://stackoverflow.com/a/11935185/1217998) and [golang](https://golang.org/doc/install) are installed
+Make sure [Docker](https://www.docker.com/), [make](https://stackoverflow.com/a/11935185/1217998), [nodejs](https://nodejs.org/en/) (development only) and [golang](https://golang.org/doc/install) are installed
 
 1. Run `docker-compose up` to start the postgres DB
-2. Run `make local-setup`
+2. Run `make local-setup` to install `nodemon` and setup environment
 3. Run `make start` to run the migrations
 
 ## Environment variables

@@ -21,6 +21,7 @@ func testConnection(db *gorm.DB) {
 
 func RunMigrations() {
 	db := database.CreateConnection()
+	defer database.CloseConnection()
 
 	// Test DB connection
 	testConnection(db)
