@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "e53dc2c7-0fd3-42af-8a9d-8624f824d156",
+		"name": "heroku-starter-golang",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "warehouse",
+			"item": [
+				{
+					"name": "warehouse",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{golang-host}}/warehouse/:id",
+							"host": [
+								"{{golang-host}}"
+							],
+							"path": [
+								"warehouse",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "warehouse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"address\": \"Address 1\",\r\n    \"workers\": [\r\n        {\"name\": \"Worker 1\"},\r\n        {\"name\": \"Worker 2\"}\r\n    ],\r\n    \"products\": [\r\n        {\"name\": \"Product 1\"},\r\n        {\"name\": \"Product 2\"}\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{golang-host}}/warehouse",
+							"host": [
+								"{{golang-host}}"
+							],
+							"path": [
+								"warehouse"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{golang-host}}/health",
+					"host": [
+						"{{golang-host}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
